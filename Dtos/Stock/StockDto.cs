@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using api.Dtos.Comment;
 
 namespace api.Dtos.Stock
 {
@@ -16,5 +17,7 @@ namespace api.Dtos.Stock
         public long MarketCap { get; set; }
 
         //Comments from model was not added on purpose
+        // Now it is
+        public List<CommentDto> Comments { get; set; }
     }
 }
