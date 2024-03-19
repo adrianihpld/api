@@ -12,8 +12,8 @@ namespace api.Interfaces
         Task<Comment?> GetByIdAsync(int id);
         Task<Comment> CreateAsync(Comment commentModel);
         // Everytime you add an addition to a controller you need to make the promise in the interface.
-        Task<Comment> UpdateAsync(int id, Comment commentModel);
-        
+        Task<Comment?> UpdateAsync(int id, Comment commentModel);
+        Task<Comment?> DeleteAsync(int id);
     }
 
     
